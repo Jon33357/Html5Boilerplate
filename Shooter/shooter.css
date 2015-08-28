@@ -1,0 +1,25 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.canvas_wrapper {
+    width: 1024px;
+    height: 640px;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+
+#maincanvas {
+    width: 1024px;
+    height: 640px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid red;
+    margin: 0px auto;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
