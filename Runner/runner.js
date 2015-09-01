@@ -56,11 +56,12 @@
                         _this.images[img].name = img;
                         _this.images[img].onload = function () { assetLoaded.call(_this, "images", img) };
                         _this.images[img].src = src;
+                        console.log(_this.images);
                     })(_this, img);
                 }
             }
         };
-
+        console.log(this.images);
         return {
             images: this.images,
             totalAssets: this.totalAssets,
@@ -194,15 +195,7 @@
 
         var jumpCounter = 0; //long jump control
 
-        player.updateOnJump =function(){
-            
-        }
-        player.updateOnWalk = function () {
-
-        }
         player.update = function () {
-
-            player.currentState();
 
 
             //walk

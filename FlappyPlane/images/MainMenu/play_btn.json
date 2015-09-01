@@ -1,0 +1,39 @@
+{"frames": {
+
+"jogar_focus":
+{
+	"frame": {"x":2,"y":2,"w":142,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":142,"h":72},
+	"sourceSize": {"w":142,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"jogar_pressed":
+{
+	"frame": {"x":146,"y":2,"w":142,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":142,"h":72},
+	"sourceSize": {"w":142,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"jogar_unfocus":
+{
+	"frame": {"x":290,"y":2,"w":142,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":142,"h":72},
+	"sourceSize": {"w":142,"h":72},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "play_btn.jpg",
+	"format": "RGB888",
+	"size": {"w":434,"h":76},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f290b6b1191dc0ef1de637949ce466ac:82329129bb1621c209d350cc054ed1dc:8b9d698ac975bb76ef7518a74432663f$"
+}
+}
