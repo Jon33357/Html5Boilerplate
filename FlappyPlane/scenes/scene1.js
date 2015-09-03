@@ -1,27 +1,36 @@
-﻿
-// Deveria implementar o Singleton aqui
+﻿var scene1 = (function () {
 
-var scene1 = (function () {
-
-    var assets = {
+    var assetsToLoad = {
         "bg": "images/MainGame/background_complete.jpg",
-        "avatar": "images/MainGame/doomg.png"
+        "plane": "images/MainGame/doomg.png"
     }
 
     return {
 
+        name: 'Scene1',
+        assets: {},
+        update: function () {
+            for (var prop in this.assets) {
+                this.assets[prop].update();
+            }
+        },
+        draw: function () {
+            for (var prop in this.assets) {
+                this.assets[prop].draw();
+            }
+        },
         loadScene: function (obj) {
 
-            var promise = assetLoader.loadAll(assets);
+            var promise = assetLoader.loadAll(assetsToLoad);
             promise.then(function (value) {
-                obj.img = value.images;
+                obj.assets.bg = new background(value.images.bg, 2);
+                console.log(obj.assets);
+              //  obj.assets.plane = new plane(value.images.plane, 2);
             }, function (reason) {
                 console.log(reason);
             });
             return promise;
-        },
-
-        img: {}
+        }
     }
 })();
 
