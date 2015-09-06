@@ -12,11 +12,13 @@ var assetLoader = (function () {
 
                 for (var asset in assets) {
 
-                    src = assets[asset];
-
+                    src = assets[asset].img;
                     images[asset] = new Image();
                     images[asset].src = src;
                     images[asset].name = asset;
+                    if (assets[asset].hasOwnProperty("json")) {
+                        // Not implemented due to a cross-origin problem in Chrome
+                    }
                     images[asset].onerror = function() { reject("FAILED TO LOAD " + src); } 
                     images[asset].onload = function () { allLoad(); }
                 }

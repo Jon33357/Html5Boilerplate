@@ -1,17 +1,19 @@
 ﻿var sceneManager = (function () {
 
+    var scene = new SceneOne();
+
     return {
         currentScene:0,
         scenes: [],
         init: function () {
-            return scene1.loadScene(scene1);
+            return scene.loadScene();
         },
         update: function () {
-            scene1.update();
+            scene.update();
 
         },
         draw: function () {
-            scene1.draw();
+            scene.draw();
 
         }
     }

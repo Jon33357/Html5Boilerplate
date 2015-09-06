@@ -3,14 +3,12 @@
     var image = img;
     var movement = 0;
     var _speed = speed;
-    var canvas = document.getElementById('maincanvas');
-    var ctxt = canvas.getContext('2d');
 
 
     this.draw = function () {
 
-        ctxt.drawImage(image, movement, 0);
-        ctxt.drawImage(image, image.width - Math.abs(movement), 0);
+        global.ctxt.drawImage(image, movement, 0);
+        global.ctxt.drawImage(image, image.width - Math.abs(movement), 0);
     };
 
     this.update = function () {
